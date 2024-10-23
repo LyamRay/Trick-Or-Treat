@@ -7,8 +7,6 @@ public class Database {
     private final Connection connection;
 
     /**
-     * Establishes a new database connection to the specified SQLite database path and
-     * creates the players table if it does not already exist.
      * @param path the path to the SQLite database file
      * @throws SQLException if a database access error occurs or the URL is null
      */
@@ -46,8 +44,6 @@ public class Database {
     }
 
     /**
-     * Adds a new player to the database with the given UUID and username.
-     *
      * @param uuid the unique identifier of the player
      * @param username the name of the player
      * @throws SQLException if a database access error occurs
@@ -61,9 +57,6 @@ public class Database {
     }
 
     /**
-     * Retrieves and prints the number of candies the player has. If the player does not exist in the database,
-     * the player is added to the database with the given UUID and name.
-     *
      * @param uuid The unique identifier of the player.
      * @param name The name of the player.
      * @throws SQLException If an SQL error occurs while accessing the database.
