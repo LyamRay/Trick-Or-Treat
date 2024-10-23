@@ -1,0 +1,12 @@
+me\lyamray\trickortreat\modules\core\commands\MainCommand.class
+me\lyamray\trickortreat\modules\ModuleManager.class
+me\lyamray\trickortreat\modules\npc\NPCModule.class
+me\lyamray\trickortreat\modules\Module.class
+me\lyamray\trickortreat\modules\scoreboard\listeners\PlayerJoinListener.class
+me\lyamray\trickortreat\modules\npc\listeners\NPCClickListener.class
+me\lyamray\trickortreat\modules\scoreboard\listeners\PlayerLeaveListener.class
+me\lyamray\trickortreat\modules\core\CoreModule.class
+me\lyamray\trickortreat\modules\database\Database.class
+me\lyamray\trickortreat\modules\scoreboard\ScoreboardModule.class
+me\lyamray\trickortreat\modules\utils\Colors.class
+me\lyamray\trickortreat\Main.class

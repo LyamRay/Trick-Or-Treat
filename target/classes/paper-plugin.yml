@@ -1,0 +1,7 @@
+name: Trick-Or-Treat
+version: '1.0'
+main: me.lyamray.trickortreat.Main
+api-version: '1.21'
+load: STARTUP
+authors: [ LyamRay ]
+description: A custom-made Trick Or Treat plugin, specially made for you!
