@@ -15,19 +15,19 @@ import java.sql.SQLException;
 public final class Main extends JavaPlugin {
 
     @Getter
-    public static Main instance;
+    private static Main instance;
 
     @Getter
     @Setter
-    public static Database database;
+    private static Database database;
 
     @Getter
     @Setter
-    public static ModuleManager moduleManager;
+    private static ModuleManager moduleManager;
 
     @Getter
     @Setter
-    public static PaperCommandManager commandManager;
+    private static PaperCommandManager commandManager;
 
 
     @Override
