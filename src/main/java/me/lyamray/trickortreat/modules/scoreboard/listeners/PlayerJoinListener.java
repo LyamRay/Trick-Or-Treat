@@ -11,7 +11,7 @@ public class PlayerJoinListener implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
-        player.sendMessage("Hallo!");
+        player.sendMessage("Hallo! Jij bent een kleine hoerzoon!");
 
     }
 }

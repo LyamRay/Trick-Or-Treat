@@ -53,11 +53,6 @@ public final class Main extends JavaPlugin {
         }
     }
 
-    /**
-     * Ensures that the data folder exists and establishes a connection to the database.
-     * If the data folder does not exist, this method attempts to create it. If folder creation fails,
-     * it disables the plugin. Next, it attempts to establish an SQLite database connection within the data folder.
-     */
     public void checkFolderAndConnect() {
         try {
             if (!getDataFolder().exists()) {

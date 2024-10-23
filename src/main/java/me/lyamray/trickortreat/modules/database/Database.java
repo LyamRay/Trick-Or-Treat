@@ -9,7 +9,6 @@ public class Database {
     /**
      * Establishes a new database connection to the specified SQLite database path and
      * creates the players table if it does not already exist.
-     *
      * @param path the path to the SQLite database file
      * @throws SQLException if a database access error occurs or the URL is null
      */
@@ -25,8 +24,6 @@ public class Database {
     }
 
     /**
-     * Closes the database connection if it is currently open.
-     *
      * @throws SQLException if a database access error occurs
      */
     public void closeConnection() throws SQLException {
@@ -36,8 +33,6 @@ public class Database {
     }
 
     /**
-     * Checks if a player exists in the database with the given UUID.
-     *
      * @param uuid The UUID of the player to check.
      * @return true if the player exists, false otherwise.
      * @throws SQLException If a database access error occurs.
