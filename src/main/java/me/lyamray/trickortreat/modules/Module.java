@@ -1,7 +1,7 @@
 package me.lyamray.trickortreat.modules;
 
 import co.aikar.commands.BaseCommand;
-import me.lyamray.trickortreat.Main;
+import me.lyamray.trickortreat.TOTMain;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 
@@ -12,10 +12,10 @@ public abstract class Module {
     public abstract void disable();
 
     public void registerListener(Listener listener) {
-        Bukkit.getPluginManager().registerEvents(listener, Main.instance);
+        Bukkit.getPluginManager().registerEvents(listener, TOTMain.getInstance());
     }
 
     public void registerCommand(BaseCommand command) {
-        Main.commandManager.registerCommand(command);
+        TOTMain.getCommandManager().registerCommand(command);
     }
 }

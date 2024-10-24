@@ -1,6 +1,6 @@
 name: Trick-Or-Treat
 version: '1.0'
-main: me.lyamray.trickortreat.Main
+main: me.lyamray.trickortreat.TOTMain
 api-version: '1.21'
 load: STARTUP
 authors: [ LyamRay ]

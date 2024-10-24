@@ -12,13 +12,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.SQLException;
 
-public final class Main extends JavaPlugin {
+public final class TOTMain extends JavaPlugin {
 
     @Getter
-    private static Main instance;
+    private static TOTMain instance;
 
     @Getter
-    @Setter
     private static Database database;
 
     @Getter
@@ -29,12 +28,11 @@ public final class Main extends JavaPlugin {
     @Setter
     private static PaperCommandManager commandManager;
 
-
     @Override
     public void onEnable() {
         // Plugin startup logic
         instance = this;
-        moduleManager =  new ModuleManager();
+        moduleManager = new ModuleManager();
         commandManager = new PaperCommandManager(this);
         moduleManager.register(new ScoreboardModule(), new CoreModule());
         checkFolderAndConnect();

@@ -6,7 +6,7 @@ me\lyamray\trickortreat\modules\scoreboard\listeners\PlayerJoinListener.class
 me\lyamray\trickortreat\modules\npc\listeners\NPCClickListener.class
 me\lyamray\trickortreat\modules\scoreboard\listeners\PlayerLeaveListener.class
 me\lyamray\trickortreat\modules\core\CoreModule.class
+me\lyamray\trickortreat\TOTMain.class
 me\lyamray\trickortreat\modules\database\Database.class
 me\lyamray\trickortreat\modules\scoreboard\ScoreboardModule.class
 me\lyamray\trickortreat\modules\utils\Colors.class
-me\lyamray\trickortreat\Main.class

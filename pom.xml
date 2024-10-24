@@ -79,6 +79,10 @@
             <id>citizens-repo</id>
             <url>https://maven.citizensnpcs.co/repo</url>
         </repository>
+        <repository>
+            <id>citizens-repo</id>
+            <url>https://maven.citizensnpcs.co/repo</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -96,7 +100,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.34</version>
+            <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -106,10 +110,8 @@
         </dependency>
         <dependency>
             <groupId>net.citizensnpcs</groupId>
-            <artifactId>citizensapi</artifactId>
+            <artifactId>citizens-main</artifactId>
             <version>2.0.36-SNAPSHOT</version>
-            <type>jar</type>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

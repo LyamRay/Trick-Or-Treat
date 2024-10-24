@@ -2,11 +2,11 @@ package me.lyamray.trickortreat.modules.core.commands;
 
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.*;
-import me.lyamray.trickortreat.Main;
+import me.lyamray.trickortreat.TOTMain;
 import me.lyamray.trickortreat.modules.utils.Colors;
 import org.bukkit.entity.Player;
 
-@CommandAlias("tot")
+@CommandAlias("tot|trickortreat")
 public class MainCommand extends BaseCommand {
 
     @CommandAlias("help")
@@ -14,7 +14,7 @@ public class MainCommand extends BaseCommand {
     @CommandPermission("tot.help")
     @Description("Get all the commands of the plugin.")
     public void onHelp(Player player) {
-        String version = Main.instance.getDescription().getVersion();
+        String version = TOTMain.getInstance().getDescription().getVersion();
         String message =
                 "&7---&6Trick-Or-Treat&7--- \n\n" +
                         "&8• &7/tot adddoor &8- &6Add a Trick-Or-Treat Door!\n" +
