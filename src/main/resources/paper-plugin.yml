@@ -6,8 +6,3 @@ load: STARTUP
 authors: [ LyamRay ]
 description: A custom-made Trick Or Treat plugin, specially made for you!
 depend: [Citizens]
-commands:
-  spawnnpc:
-    descripton: Test command!
-    aliases:
-      - npc
