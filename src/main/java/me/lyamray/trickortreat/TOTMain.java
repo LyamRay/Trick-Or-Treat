@@ -41,11 +41,6 @@ public final class TOTMain extends JavaPlugin {
                 new NPCModule(),
                 new ScoreboardModule());
         checkFolderAndConnect();
-
-        if (Bukkit.getPluginManager().getPlugin("Citizens") == null) {
-            Bukkit.getPluginManager().disablePlugin(this);
-            System.err.println("The Citizens plugin is not found.");
-        }
     }
 
     /**
@@ -76,6 +71,5 @@ public final class TOTMain extends JavaPlugin {
             Bukkit.getPluginManager().disablePlugin(this);
             throw new RuntimeException("Failed to connect to the database. " + exception);
         }
-
     }
 }
