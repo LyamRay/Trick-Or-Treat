@@ -2,7 +2,6 @@ package me.lyamray.trickortreat.modules.npc;
 
 import me.lyamray.trickortreat.modules.Module;
 import me.lyamray.trickortreat.modules.npc.commands.SpawnNpcCommand;
-import me.lyamray.trickortreat.modules.npc.listeners.NPCClickListener;
 
 public class NPCModule extends Module {
 
@@ -14,7 +13,6 @@ public class NPCModule extends Module {
      */
     @Override
     public void enable() {
-        registerListener(new NPCClickListener());
         registerCommand(new SpawnNpcCommand());
     }
 

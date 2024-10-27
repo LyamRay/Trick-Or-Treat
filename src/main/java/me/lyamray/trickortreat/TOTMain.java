@@ -6,6 +6,7 @@ import lombok.Setter;
 import me.lyamray.trickortreat.modules.ModuleManager;
 import me.lyamray.trickortreat.modules.core.CoreModule;
 import me.lyamray.trickortreat.modules.database.Database;
+import me.lyamray.trickortreat.modules.npc.NPCModule;
 import me.lyamray.trickortreat.modules.scoreboard.ScoreboardModule;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -34,8 +35,17 @@ public final class TOTMain extends JavaPlugin {
         instance = this;
         moduleManager = new ModuleManager();
         commandManager = new PaperCommandManager(this);
-        moduleManager.register(new ScoreboardModule(), new CoreModule());
+        moduleManager.register(
+                new ScoreboardModule(),
+                new CoreModule(),
+                new NPCModule(),
+                new ScoreboardModule());
         checkFolderAndConnect();
+
+        if (Bukkit.getPluginManager().getPlugin("Citizens") == null) {
+            Bukkit.getPluginManager().disablePlugin(this);
+            System.err.println("The Citizens plugin is not found.");
+        }
     }
 
     /**
